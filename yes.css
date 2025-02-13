@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 235, 237);
+    height: 90vh;
+}
+h1{
+    text-align: center;
+    color: rgb(17, 17, 89);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    color: rgb(11, 11, 62);
+
+}
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

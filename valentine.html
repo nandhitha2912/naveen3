@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE my valentine?
+    </title>
+    <link rel="stylesheet" href="valentine.css"
+</head>
+<body>
+    <div class="container">
+        <h1>BE my valentine?</h1> 
+    
+
+        <img src="https://media.giphy.com/media/l3UQzZry2QZl6kCBtV/giphy.gif?cid=ecf05e47nta29ntmx8qioa8kvyn777i05nrpdida7yl114wl&ep=v1_gifs_related&rid=giphy.gif&ct=g">
+    
+        <div class="buttons">
+            <div class="butt" id="yesbutton" onclick="yes()">YES</div>
+            <div class="butt" id="nobutton" onmouseover="no() " onmouseclick="no()">NO</div>
+        </div>
+    </div>
+   
+    <script>
+        function yes(){
+            window.location.href="yes.html"
+        }
+        function no(){
+            var x = Math.random() * (window.innerWidth - document.getElementById('nobutton').offsetWidth) - 85;
+            var y = Math.random() * (window.innerHeight - document.getElementById('nobutton').offsetHeight) - 48;
+            document.getElementById('nobutton').style.left = `${x}px`;
+            document.getElementById('nobutton').style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
